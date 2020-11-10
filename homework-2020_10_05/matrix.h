@@ -153,8 +153,8 @@ namespace Matrices {
 
         for (unsigned i = 0; i < rows; ++i) {
             for (unsigned j = 0; j < cols; ++j) {
-                for (unsigned k = 0; k < rows; ++k) {
-                    result(i, j) += this->matrix[i][k] * rhs(k, i);
+                for (unsigned k = 0; k <= rows; ++k) {
+                    result(i, j) += this->matrix[i][k] * rhs(k, j);
                 }
             }
         }
