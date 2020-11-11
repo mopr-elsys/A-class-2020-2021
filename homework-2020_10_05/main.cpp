@@ -1,11 +1,11 @@
 #include <iostream>
-#include <vector>
-#include <ctime>
 #include "matrix.h"
 
 int main() {
     const unsigned rows = 2;
     const unsigned cols = 3;
+    Matrices::init();
+
     Matrices::Matrix<int> a(rows, cols, 0);
 
     a.create_random_matrix(10);
